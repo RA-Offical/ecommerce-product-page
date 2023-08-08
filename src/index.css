@@ -4,6 +4,7 @@
 @import url(./App.css);
 @import url(./components/header/header.css);
 @import url(./components/navbar/navbar.css);
+@import url(./components/product/product.css);
 
 :root {
 	/* I doesn't specify the function because it is possible I will add opacity in colors so it will be easy to add opacity */
@@ -26,6 +27,8 @@
 	--ff-secondary: var(--ff-primary);
 
 	/* font size */
+	--fs-200: 1.4rem;
+	--fs-300: 1.5rem;
 	--fs-400: 1.6rem;
 	--fs-500: 1.7rem;
 	--fs-600: 1.8rem;

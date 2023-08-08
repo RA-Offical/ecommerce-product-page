@@ -1,6 +1,7 @@
 body {
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
+	color: hsl(var(--color-neutral-700));
 	min-width: 360px;
 }
 
@@ -108,13 +109,14 @@ body {
 
 /* setting up buttons */
 .btn {
+	font-size: var(--fs-button);
 	display: inline-block;
 	cursor: pointer;
 	border: 1px solid transparent;
 	white-space: nowrap;
 	background-color: transparent;
 	transition-property: background, color, border-color, box-shadow;
-	transition-duration: 0.15s;
+	transition-duration: 0.1s;
 }
 
 .btn--icon {
@@ -139,4 +141,33 @@ body {
 .btn--icon-full svg {
 	width: 100%;
 	height: 100%;
+}
+
+.btn--icon-text {
+	height: 50px;
+	border-radius: 0.6rem;
+	gap: 1.5rem;
+}
+
+.btn--icon-text svg {
+	font-size: 1.7em;
+}
+
+.btn--icon-text-primary {
+	background-color: hsl(var(--color-primary-600));
+	color: hsl(var(--color-neutral-400));
+	font-weight: 700;
+	box-shadow: 0px 20px 24px -12px hsla(26, 100%, 55%, 0.5);
+}
+
+.btn--icon-text-primary:is(:hover, :focus-visible) {
+	background-color: hsl(var(--color-primary-500));
+}
+
+.btn--icon-text-primary:active {
+	background-color: hsl(var(--color-primary-400));
+}
+
+.btn--block {
+	width: 100%;
 }

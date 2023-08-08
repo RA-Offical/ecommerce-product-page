@@ -1,0 +1,73 @@
+.product__company {
+	font-size: var(--fs-200);
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+}
+
+.product__title {
+	font-size: var(--fs-800);
+	line-height: 1.1;
+	margin-bottom: 1.5em;
+}
+
+.prices-container {
+	margin-block: 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.prices-container > div {
+	gap: 1em;
+}
+
+.product__price-after-discount {
+	font-size: var(--fs-700);
+}
+
+.product__discount {
+	padding: 0.2em 0.5em;
+	border-radius: 0.6rem;
+}
+
+.product__original-price {
+	text-decoration: line-through solid hsl(var(--color-neutral-600)) 1px;
+}
+
+.product-action {
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.product-control-container {
+	overflow: hidden;
+	border-radius: 0.6rem;
+}
+
+.product-control-container > * {
+	height: 50px;
+	flex: 1;
+	position: relative;
+	font-size: 1.2em;
+}
+
+.product-control-container > .btn:is(:hover, :focus-visible) {
+	background-color: hsl(var(--color-primary-100));
+}
+
+@media screen and (min-width: 54em) {
+	.prices-container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.product-action {
+		flex-direction: row;
+	}
+
+	.product-action > * {
+		flex: 1;
+	}
+}
