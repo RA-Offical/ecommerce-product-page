@@ -1,0 +1,36 @@
+.primary-header {
+	padding-block: 2rem;
+}
+
+.header-left {
+	gap: 1rem;
+}
+
+.app-logo {
+	font-size: 2.5rem;
+}
+
+.header-right {
+	gap: 1.5rem;
+}
+
+@media screen and (min-width: 54em) {
+	.primary-header {
+		padding-block: 0;
+		position: relative;
+	}
+
+	.primary-header:after {
+		content: "";
+		position: absolute;
+		left: calc(var(--padding));
+		right: calc(var(--padding));
+		top: 100%;
+		height: 4px;
+		background-color: hsl(var(--color-neutral-500));
+	}
+
+	.header__btn--menu {
+		display: none;
+	}
+}

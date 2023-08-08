@@ -2,6 +2,8 @@
 
 /* importing css files */
 @import url(./App.css);
+@import url(./components/header/header.css);
+@import url(./components/navbar/navbar.css);
 
 :root {
 	/* I doesn't specify the function because it is possible I will add opacity in colors so it will be easy to add opacity */
