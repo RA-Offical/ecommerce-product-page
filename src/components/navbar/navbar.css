@@ -50,6 +50,7 @@
 
 @media screen and (max-width: 54em) {
 	.nav-wrapper {
+		z-index: 100;
 		position: fixed;
 		inset: 0;
 		background-color: hsla(var(--color-neutral-100));

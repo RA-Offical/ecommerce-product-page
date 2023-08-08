@@ -1,10 +1,16 @@
 import { BsCart3 } from "react-icons/bs";
 import { HiPlus, HiMinus } from "react-icons/hi";
+import productData from "../../data/productData";
+import { ProductCarasoul } from "../";
 
 function Product() {
 	return (
 		<div className="product-wrapper">
-			<div className="container product">
+			<div className="product">
+				{/* Product Carasoul component  */}
+				<ProductCarasoul productData={productData} />
+
+				{/* Product information here */}
 				<div className="product-info">
 					<p className="text-primary-600 fw-bold product__company">
 						Sneaker Company
@@ -48,7 +54,7 @@ function Product() {
 							</button>
 						</div>
 
-						<button className="btn btn--icon btn--icon-text btn--icon-text-primary btn--block">
+						<button className="btn btn--icon btn--icon-text btn--icon-text-primary btn--block product__cart--btn">
 							<BsCart3 /> Add to Cart
 						</button>
 					</div>
