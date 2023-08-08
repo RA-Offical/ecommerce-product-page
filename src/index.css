@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+
+/* importing css files */
+@import url(./App.css);
+
+:root {
+	/* I doesn't specify the function because it is possible I will add opacity in colors so it will be easy to add opacity */
+	--color-primary-100: 25, 100%, 94%;
+	--color-primary-200: 26, 100%, 75%;
+	--color-primary-300: 26, 100%, 70%;
+	--color-primary-400: 26, 100%, 65%;
+	--color-primary-500: 26, 100%, 60%;
+	--color-primary-600: 26, 100%, 55%;
+
+	--color-neutral-400: 0, 0%, 100%;
+	--color-neutral-500: 223, 64%, 98%;
+	--color-neutral-600: 220, 14%, 75%;
+	--color-neutral-700: 219, 9%, 45%;
+	--color-neutral-800: 200, 13%, 13%;
+	--color-neutral-900: 0, 0%, 0%;
+
+	/* font familiy*/
+	--ff-primary: "Kumbh Sans", sans-serif;
+	--ff-secondary: var(--ff-primary);
+
+	/* font size */
+	--fs-400: 1.6rem;
+	--fs-500: 1.7rem;
+	--fs-600: 1.8rem;
+	--fs-700: 2.5rem;
+	--fs-800: 3rem;
+	--fs-900: 3.5rem;
+
+	--fs-body: var(--fs-400);
+	--fs-button: var(--fs-400);
+
+	/* font weight */
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semi-bold: 600;
+	--fw-bold: 700;
+}
+
+@media screen and (min-width: 54em) {
+	:root {
+		--fs-body: var(--fs-600);
+	}
+}
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+
+html {
+	font-size: 62.5%;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
