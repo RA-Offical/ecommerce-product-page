@@ -19,6 +19,15 @@
 	position: relative;
 }
 
+.header__account--btn {
+	border-radius: 9999px;
+	border: 2px solid transparent;
+}
+
+.header__account--btn:is(:hover, :focus-visible) {
+	border-color: hsl(var(--color-primary-600));
+}
+
 .cart-notification {
 	padding: 0.1em 1em;
 	font-size: 1rem;

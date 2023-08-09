@@ -76,7 +76,7 @@ function Header({ cart, removeFromCart }) {
 						)}
 					</button>
 
-					<button className="btn btn--icon btn--icon-full btn--icon-full-lg">
+					<button className="btn btn--icon btn--icon-full btn--icon-full-lg header__account--btn">
 						<img src={accountImg} alt="" />
 					</button>
 				</div>
