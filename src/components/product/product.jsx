@@ -1,14 +1,17 @@
 import { BsCart3 } from "react-icons/bs";
 import { HiPlus, HiMinus } from "react-icons/hi";
 import productData from "../../data/productData";
-import { ProductCarasoul } from "../";
+import { Cart, ProductCarasoul } from "../";
+import { useState } from "react";
 
-function Product() {
+function Product({ setCart, hanldeIncrement, handleDecrement }) {
+	const [total, setTotal] = useState(0);
+
 	return (
 		<div className="product-wrapper">
 			<div className="product">
 				{/* Product Carasoul component  */}
-				<ProductCarasoul productData={productData} />
+				<ProductCarasoul productData={productData} setCart={setCart} />
 
 				{/* Product information here */}
 				<div className="product-info">
@@ -43,13 +46,27 @@ function Product() {
 
 					<div className="flex product-action">
 						<div className="bg-neutral-500 flex  product-control-container">
-							<button className="btn btn--icon text-primary-600 product-control__dec--btn">
+							<button
+								className="btn btn--icon text-primary-600 product-control__dec--btn"
+								onClick={(e) => {
+									e.stopPropagation();
+									hanldeIncrement();
+									setTotal(total + 1);
+								}}
+							>
 								<HiPlus />
 							</button>
 							<span className="btn--icon text-neutral-800 fw-bold">
-								0
+								{total}
 							</span>
-							<button className="btn btn--icon text-primary-600  product-control__inc--btn">
+							<button
+								className="btn btn--icon text-primary-600  product-control__inc--btn"
+								onClick={(e) => {
+									e.stopPropagation();
+									handleDecrement(0);
+									if (total !== 0) setTotal(total - 1);
+								}}
+							>
 								<HiMinus />
 							</button>
 						</div>

@@ -6,6 +6,7 @@
 @import url(./components/navbar/navbar.css);
 @import url(./components/product/product.css);
 @import url(./components/product-carasoul/product-carasoul.css);
+@import url(./components/cart/cart.css);
 
 :root {
 	/* I doesn't specify the function because it is possible I will add opacity in colors so it will be easy to add opacity */

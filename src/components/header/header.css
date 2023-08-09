@@ -1,5 +1,6 @@
 .primary-header {
 	padding-block: 2rem;
+	position: relative;
 }
 
 .header-left {
@@ -12,6 +13,19 @@
 
 .header-right {
 	gap: 3.5rem;
+}
+
+.header__cart--btn {
+	position: relative;
+}
+
+.cart-notification {
+	padding: 0.1em 1em;
+	font-size: 1rem;
+	position: absolute;
+	top: -30%;
+	right: -50%;
+	border-radius: 1rem;
 }
 
 @media screen and (min-width: 54em) {

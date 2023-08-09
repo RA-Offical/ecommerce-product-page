@@ -18,6 +18,9 @@ body {
 	color: hsl(var(--color-primary-600));
 }
 
+.text-neutral-400 {
+	color: hsl(var(--color-neutral-400));
+}
 .text-neutral-500 {
 	color: hsl(var(--color-neutral-500));
 }
@@ -102,6 +105,20 @@ body {
 	background-color: transparent;
 	transition-property: background, color, border-color, box-shadow;
 	transition-duration: 0.1s;
+}
+
+.btn--primary {
+	padding: 0.6em 1.2em;
+	background-color: hsl(var(--color-primary-600));
+	color: hsl(var(--color-neutral-400));
+	border-radius: 0.6rem;
+}
+
+.btn--primary:hover {
+	background-color: hsl(var(--color-primary-500));
+}
+.btn--primary:active {
+	background-color: hsl(var(--color-primary-400));
 }
 
 .btn--icon {

@@ -1,0 +1,15 @@
+.cart-item {
+	display: grid;
+	grid-template-columns: 50px 1fr auto;
+	gap: 1rem;
+}
+
+.cart-item__img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.6rem;
+}
+
+.cart-item-price-info-container {
+	gap: 0.2222em;
+}
